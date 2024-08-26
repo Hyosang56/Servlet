@@ -10,7 +10,7 @@
 </head>
 <body>
 	<h1>학생 정보</h1>
-	[<a href="/studentInfo/StudentController">새로고침</a>]
+	[<a href="/StudentInfo/StudentController">새로고침</a>]
 	<hr>
    <table border="1">
       <tr><th>id</th><th>이름</th>
@@ -25,12 +25,13 @@
          </tr>      
       </c:forEach>
    </table>
+   
    <hr>
    
    	<h2>학생 추가</h2>
    <hr>
    <form method="post" 
-   action="/studentInfo/StudentControlle?action=insert">
+   action="/StudentInfo/StudentController?action=insert">
       <label>이름</label>
       <input type="text" name="username"><br>
       <label>대학</label>

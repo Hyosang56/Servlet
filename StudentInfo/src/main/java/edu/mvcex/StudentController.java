@@ -88,7 +88,7 @@ public class StudentController extends HttpServlet {
 	         
 	      }catch(Exception e) {e.printStackTrace(); }
 	      
-//	      dao.insert(s);
+	      dao.insert(s);
 	      return list(request , response);
 	      
 	   }
