@@ -1,5 +1,5 @@
 #Tomcat publish data
-#Mon Aug 26 21:40:51 KST 2024
+#Tue Aug 27 20:56:15 KST 2024
 org.eclipse.jst.jee.server\:JSPFirst240819=C\:\\apache-tomcat-10.1.28\\wtpwebapps\\JSPFirst240819
 org.eclipse.jst.jee.server\:OracleJSPEx=C\:\\apache-tomcat-10.1.28\\wtpwebapps\\OracleJSPEx
 org.eclipse.jst.jee.server\:ServletJSPEx240823=C\:\\apache-tomcat-10.1.28\\wtpwebapps\\ServletJSPEx240823

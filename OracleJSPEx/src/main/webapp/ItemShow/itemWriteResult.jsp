@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import ="java.sql.*" %>
+<jsp:useBean id="itemBean" class="webdb.oracleex.ItemBean" />
+<jsp:setProperty property="*" name="itemBean"/>
 <!DOCTYPE html>
 <html>
 <head>
@@ -45,6 +47,18 @@
          conn.close();
    }
 %>
+<H1>item 테이블 읽어오기_첫번째</H1>
+      [상품명] <%=itemBean.getName() %><BR>
+      [가격] <%= itemBean.getPrice() %><BR>
+       [설명] <%= itemBean.getDescription()%> <BR>
+                    
+       <H1>item 테이블 읽어오기_두번째</H1>
+      [상품명]<jsp:getProperty  name ="itemBean" 
+            property="name" /> <br>
+      [가격] <jsp:getProperty name="itemBean" 
+            property="price" /> <br>
+      [설명] <jsp:getProperty name="itemBean" 
+            property="description" /> <br>   
 <a href=itemWrite.jsp>결과 보기</a>
 </body>
 </html>
