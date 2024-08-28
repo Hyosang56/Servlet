@@ -1,6 +1,8 @@
 #Tomcat publish data
-#Tue Aug 27 20:56:15 KST 2024
+#Wed Aug 28 20:58:21 KST 2024
+org.eclipse.jst.jee.server\:DBConnectionMgr240828=C\:\\apache-tomcat-10.1.28\\wtpwebapps\\DBConnectionMgr240828
 org.eclipse.jst.jee.server\:JSPFirst240819=C\:\\apache-tomcat-10.1.28\\wtpwebapps\\JSPFirst240819
 org.eclipse.jst.jee.server\:OracleJSPEx=C\:\\apache-tomcat-10.1.28\\wtpwebapps\\OracleJSPEx
+org.eclipse.jst.jee.server\:ProductInfoMVC=C\:\\apache-tomcat-10.1.28\\wtpwebapps\\ProductInfoMVC
 org.eclipse.jst.jee.server\:ServletJSPEx240823=C\:\\apache-tomcat-10.1.28\\wtpwebapps\\ServletJSPEx240823
 org.eclipse.jst.jee.server\:StudentInfo=C\:\\apache-tomcat-10.1.28\\wtpwebapps\\StudentInfo
