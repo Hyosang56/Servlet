@@ -13,14 +13,15 @@
 	[ <a href="/ProductMVCOracle/ProductController">새로고침</a>]
 	<hr>
    <table border="1">
-      <tr><th>번호</th><th>상품명</th>
-      <th>브랜드</th><th>가격</th></tr>
+      <tr><th>상품id</th><th>상품명</th>
+      <th>브랜드</th><th>가격</th><th>제조일자</th></tr>
       <c:forEach items="${products}" var ="p">
          <tr>
             <td>${p.id}</td>
             <td>${p.name}</td>
             <td>${p.maker}</td>
             <td>${p.price}</td>
+            <td>${p.makedate}</td>
          </tr>      
       </c:forEach>
    </table>
@@ -30,14 +31,15 @@
    <h2>상품 추가</h2>
    <hr>
    <form method="post" action="/ProductMVCOracle/ProductController?action=insert">
-      <label>번호</label>
-      <input type="text" name="id"><br>
+      
       <label>상품명</label>
       <input type="text" name="name"><br>
       <label>브랜드</label>
       <input type="text" name="maker"><br>
       <label>가격</label>
       <input type="text" name="price"><br>
+      <label>제조일자</label>
+      <input type="text" name="makedate"><br>
       <button type="submit">등록</button>
    </form>
 </body>

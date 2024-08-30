@@ -1,14 +1,19 @@
 package edu.product;
 
+import java.sql.Date;
+
 public class Product {
-	private String id;
+	private int id;
 	private String name;
 	private String maker;
 	private int price;
-	public String getId() {
+	private Date makedate;
+	
+	
+	public int getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getName() {
@@ -29,7 +34,12 @@ public class Product {
 	public void setPrice(int price) {
 		this.price = price;
 	}
-	
+	public Date getMakedate() {
+		return makedate;
+	}
+	public void setMakedate(Date makedate) {
+		this.makedate = makedate;
+	}
 	
 
 }

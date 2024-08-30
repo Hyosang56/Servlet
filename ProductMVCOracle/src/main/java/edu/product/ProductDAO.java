@@ -9,12 +9,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+
+
 public class ProductDAO {
 	Connection conn = null;
 	PreparedStatement pstmt;
 	
 	final String JDBC_DRIVER = "oracle.jdbc.driver.OracleDriver";
 	final String JDBC_URL = "jdbc:oracle:thin:@localhost:1521:xe";
+	
+	List<Product> products = new ArrayList<>();
+	
 	public void open(){
 	      try {
 	         Class.forName(JDBC_DRIVER);
@@ -33,18 +38,19 @@ public class ProductDAO {
 	      }
 	   }
 	   
-	   public void insert(Product s) {
+	   public void insert(Product p) {
 	      open();
 	      //String sql = "INSERT INTO student(username, univ, birth, email) values(?,?,?,?);";//error 발생
-	      String sql = "INSERT INTO student(id, name, maker, price) " +
+	      String sql = "INSERT INTO product( name, maker, price, makedate) " +
 	               "values(?,?,?,?)";//error 발생
 	      
 	      try {
 	         pstmt = conn.prepareStatement(sql);
-	         pstmt.setString(1, s.getId());
-	         pstmt.setString(2, s.getName());
-	         pstmt.setString(3, s.getMaker());
-	         pstmt.setInt(4, s.getPrice());
+	         pstmt.setString(1, p.getName());
+	         pstmt.setString(2, p.getMaker());
+	         pstmt.setInt(3, p.getPrice());
+	         pstmt.setDate(4, p.getMakedate());
+	         
 	         
 	         pstmt.executeUpdate();
 	      } catch(Exception e) {
@@ -56,21 +62,22 @@ public class ProductDAO {
 	   
 	   public List<Product> getAll() {
 	      open();
-	      List<Product> products = new ArrayList<>();
+	      
 	      
 	      try {
 	         //pstmt = conn.prepareStatement("select * from student;");//error 발생
-	         pstmt = conn.prepareStatement("select * from student");
+	         pstmt = conn.prepareStatement("select * from product");
 	         ResultSet rs = pstmt.executeQuery();
 	   
 	         while(rs.next()) {
-	        	 Product s = new Product();
-	            s.setId(rs.getString("id"));
-	            s.setName(rs.getString("name"));
-	            s.setMaker(rs.getString("maker"));
-	            s.setPrice(rs.getInt("price"));
+	        	 Product p = new Product();
+	            p.setId(rs.getInt("id"));
+	            p.setName(rs.getString("name"));
+	            p.setMaker(rs.getString("maker"));
+	            p.setPrice(rs.getInt("price"));
+	            p.setMakedate(rs.getDate("makedate"));
 	            
-	            products.add(s);
+	            products.add(p);
 	         }
 	      } catch (Exception e) {
 	         e.printStackTrace();
@@ -79,4 +86,5 @@ public class ProductDAO {
 	      }
 	      return products;
 	   }
+	   
 }
