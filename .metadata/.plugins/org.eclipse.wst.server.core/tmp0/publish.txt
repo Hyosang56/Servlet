@@ -1,5 +1,5 @@
 #Tomcat publish data
-#Mon Sep 02 21:33:41 KST 2024
+#Tue Sep 03 21:30:15 KST 2024
 org.eclipse.jst.jee.server\:BBSItemOracle=C\:\\apache-tomcat-10.1.28\\wtpwebapps\\BBSItemOracle
 org.eclipse.jst.jee.server\:BBSListOracle=C\:\\apache-tomcat-10.1.28\\wtpwebapps\\BBSListOracle
 org.eclipse.jst.jee.server\:DBConnectionMgr240828=C\:\\apache-tomcat-10.1.28\\wtpwebapps\\DBConnectionMgr240828
