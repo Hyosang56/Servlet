@@ -8,7 +8,7 @@
 </head>
 <body>
 	<%
-		String str = request.getAttribute("reslut").toString();
+		String str = request.getAttribute("result").toString();
 		out.print(str);
 	%>
 </body>
