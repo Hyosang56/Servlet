@@ -40,4 +40,25 @@
     <url-pattern>/IdCheckServlet</url-pattern>
     <url-pattern>/idCheck.do</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LogoutServlet</display-name>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>com.icia.controller.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>MemberUpdateServlet</display-name>
+    <servlet-name>MemberUpdateServlet</servlet-name>
+    <servlet-class>com.icia.controller.MemberUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MemberUpdateServlet</servlet-name>
+    <url-pattern>/MemberUpdateServlet</url-pattern>
+    <url-pattern>/memberUpdate.do</url-pattern>
+  </servlet-mapping>
 </web-app>

@@ -12,7 +12,7 @@
 </head>
 <body>
 	<h2>로그인</h2>
-   <form action="" 
+   <form action="/MemberCareOracle/LoginServlet" 
       method="post" name="frm">
       <table>
          <tr>

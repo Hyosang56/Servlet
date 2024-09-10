@@ -1,4 +1,4 @@
 #Tomcat publish data
-#Mon Sep 09 21:20:47 KST 2024
+#Tue Sep 10 21:24:43 KST 2024
 org.eclipse.jst.jee.server\:GugudanMVC=C\:\\apache-tomcat-10.1.28\\wtpwebapps\\GugudanMVC
 org.eclipse.jst.jee.server\:MemberCareOracle=C\:\\apache-tomcat-10.1.28\\wtpwebapps\\MemberCareOracle
