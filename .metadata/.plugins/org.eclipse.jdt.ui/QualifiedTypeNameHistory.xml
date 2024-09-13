@@ -3,4 +3,5 @@
     <fullyQualifiedTypeName name="java.sql.Date"/>
     <fullyQualifiedTypeName name="java.sql.Statement"/>
     <fullyQualifiedTypeName name="javax.naming.Context"/>
+    <fullyQualifiedTypeName name="com.magic.dao.EmployeesDAO"/>
 </qualifiedTypeNameHistroy>
