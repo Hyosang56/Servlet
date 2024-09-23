@@ -1,7 +1,14 @@
 package com.icia.controller;
 
 import com.icia.controller.action.Action;
+import com.icia.controller.action.BoardCheckPassAction;
+import com.icia.controller.action.BoardCheckPassFormAction;
 import com.icia.controller.action.BoardListAction;
+import com.icia.controller.action.BoardUpdateAction;
+import com.icia.controller.action.BoardUpdateFormAction;
+import com.icia.controller.action.BoardViewAction;
+import com.icia.controller.action.BoardWriteAction;
+import com.icia.controller.action.BoardWriteFormAction;
 
 public class ActionFactory {
 	private static ActionFactory instance = 
@@ -23,12 +30,13 @@ public class ActionFactory {
 	      if (command.equals("board_list")) {
 	         action = new BoardListAction();
 	      } 
+	   
 	      
 	      else if(command.equals("board_write_form"))
 	      {
 	         action = new BoardWriteFormAction();
-	      }
-	      /*
+	      }   
+	         
 	      else if (command.equals("board_view"))
 	      {
 	         action = new BoardViewAction();
@@ -58,7 +66,7 @@ public class ActionFactory {
 	      {
 	         action = new BoardUpdateAction();
 	      }
-	      
+	      /*
 	      else if(command.equals("board_delete"))
 	      {
 	         action = new BoardDeleteAction();
