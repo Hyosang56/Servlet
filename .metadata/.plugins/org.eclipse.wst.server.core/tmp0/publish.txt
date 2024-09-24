@@ -1,8 +1,9 @@
 #Tomcat publish data
-#Mon Sep 23 21:36:29 KST 2024
+#Tue Sep 24 21:43:22 KST 2024
 org.eclipse.jst.jee.server\:BoardOracle=C\:\\apache-tomcat-10.1.28\\wtpwebapps\\BoardOracle
 org.eclipse.jst.jee.server\:EmployeesAnsOracle=C\:\\apache-tomcat-10.1.28\\wtpwebapps\\EmployeesAnsOracle
 org.eclipse.jst.jee.server\:EmployeesJavaScriptOracle240919=C\:\\apache-tomcat-10.1.28\\wtpwebapps\\EmployeesJavaScriptOracle240919
 org.eclipse.jst.jee.server\:EmployeesOracle=C\:\\apache-tomcat-10.1.28\\wtpwebapps\\EmployeesOracle
+org.eclipse.jst.jee.server\:EmployeesOracleDB=C\:\\apache-tomcat-10.1.28\\wtpwebapps\\EmployeesOracleDB
 org.eclipse.jst.jee.server\:GugudanMVC=C\:\\apache-tomcat-10.1.28\\wtpwebapps\\GugudanMVC
 org.eclipse.jst.jee.server\:MemberCareOracle=C\:\\apache-tomcat-10.1.28\\wtpwebapps\\MemberCareOracle

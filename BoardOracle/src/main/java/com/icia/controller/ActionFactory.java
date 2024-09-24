@@ -3,6 +3,7 @@ package com.icia.controller;
 import com.icia.controller.action.Action;
 import com.icia.controller.action.BoardCheckPassAction;
 import com.icia.controller.action.BoardCheckPassFormAction;
+import com.icia.controller.action.BoardDeleteAction;
 import com.icia.controller.action.BoardListAction;
 import com.icia.controller.action.BoardUpdateAction;
 import com.icia.controller.action.BoardUpdateFormAction;
@@ -66,12 +67,12 @@ public class ActionFactory {
 	      {
 	         action = new BoardUpdateAction();
 	      }
-	      /*
+	    
 	      else if(command.equals("board_delete"))
 	      {
 	         action = new BoardDeleteAction();
 	      }
-	      */
+	     
 	      
 	      return action;
 	   }
