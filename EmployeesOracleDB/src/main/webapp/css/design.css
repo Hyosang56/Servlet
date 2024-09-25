@@ -8,7 +8,7 @@
 }
 
 h1 {
-   color: green; /* 글 색상 */
+   color: #8000ff; /* 글 색상 */
 }
 
 table {
@@ -24,7 +24,7 @@ table td,th {
 }
 
 th {
-   background: yellowgreen; /* 배경색 */
+   background: #008080; /* 배경색 */
 }
 
 img {

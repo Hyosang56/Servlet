@@ -123,7 +123,7 @@ public class EmployeeDAO {
 		      return eVo;
 		   }
 		   
-		   public void updateBoard(EmployeeVO eVo) {
+		   public void updateEmployee(EmployeeVO eVo) {
 		      String sql = "update employees set id=?, pass=?, name=?, "
 		            + "lev=?, gender=? , phone=? where id=?";
 		      Connection conn = null;
@@ -137,6 +137,7 @@ public class EmployeeDAO {
 		         pstmt.setString(4, eVo.getLev());
 		         pstmt.setString(5, eVo.getGender());
 		         pstmt.setString(6, eVo.getPhone());
+		         pstmt.setString(7, eVo.getId());  // where 조건에 id 값 설정
 		         pstmt.executeUpdate();
 		      } catch (SQLException e) {
 		         e.printStackTrace();
@@ -145,7 +146,7 @@ public class EmployeeDAO {
 		      }
 		   }
 		   
-		   public void deleteBoard(String id) {
+		   public void deleteEmployee(String id) {
 		      String sql = "delete employees where id=?";
 		      Connection conn = null;
 		      PreparedStatement pstmt = null;

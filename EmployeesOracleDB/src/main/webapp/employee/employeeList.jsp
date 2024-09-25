@@ -8,6 +8,11 @@
 <meta charset="UTF-8">
 <title>employeeList.jsp</title>
 <link rel="stylesheet" type="text/css" href="css/design.css">
+<style>
+	table.list td {
+    text-align: center;
+}
+</style>
 </head>
 <body>
 	<div id="wrap" align="center">
@@ -29,8 +34,18 @@
                <td>${employee.id }</td>
                <td><a href="EmployeeServlet?command=employee_view&id=${employee.id}">
                      ${employee.name } </a></td>
-               <td>${employee.lev}</td>
-               <td>${employee.gender}</td>
+               <td>
+               <c:choose>
+					<c:when test='${employee.lev eq "A"}'>운영자</c:when>
+					<c:otherwise>일반회원</c:otherwise>
+				</c:choose>
+				</td>
+               <td>
+               <c:choose>
+				<c:when test='${employee.gender eq "1"}'>남자</c:when>
+				<c:otherwise>여자</c:otherwise>
+			</c:choose>
+               </td>
                <td>${employee.phone}</td>
             </tr>
          </c:forEach>

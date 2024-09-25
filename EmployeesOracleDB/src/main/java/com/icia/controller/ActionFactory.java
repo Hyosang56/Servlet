@@ -1,8 +1,14 @@
 package com.icia.controller;
 
 import com.icia.controller.action.Action;
+import com.icia.controller.action.EmployeeCheckPassAction;
+import com.icia.controller.action.EmployeeCheckPassFormAction;
+import com.icia.controller.action.EmployeeDeleteAction;
 import com.icia.controller.action.EmployeeListAction;
+import com.icia.controller.action.EmployeeUpdateAction;
+import com.icia.controller.action.EmployeeUpdateFormAction;
 import com.icia.controller.action.EmployeeViewAction;
+import com.icia.controller.action.EmployeeWriteAction;
 import com.icia.controller.action.EmployeeWriteFormAction;
 
 public class ActionFactory {
@@ -37,7 +43,7 @@ public class ActionFactory {
 	      {
 	         action = new EmployeeViewAction();
 	      }
-	      /**
+	      
 	      else if (command.equals("employee_write"))
 	      {
 	         action = new EmployeeWriteAction();
@@ -68,7 +74,7 @@ public class ActionFactory {
 	         action = new EmployeeDeleteAction();
 	      }
 	     
-	    **/  
+	      
 	      return action;
 	   }
 
