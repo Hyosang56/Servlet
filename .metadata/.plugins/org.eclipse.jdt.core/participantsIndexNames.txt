@@ -75,6 +75,8 @@ D:\BigDataAI\JSPEx\JSPWorkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jsps
 \JSPFirst240819\src\main\java
 D:\BigDataAI\JSPEx\JSPWorkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2503374898.index
 \OracleJSPEx\src\main\java
+D:\BigDataAI\JSPEx\JSPWorkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2122324111.index
+\BookOracle\src\main\java
 D:\BigDataAI\JSPEx\JSPWorkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1751800678.index
 \OracleJSPEx\src\main\java
 D:\BigDataAI\JSPEx\JSPWorkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4150690306.index
